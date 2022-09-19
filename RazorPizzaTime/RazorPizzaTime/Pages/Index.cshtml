@@ -1,0 +1,35 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Welcome";
+}
+
+<head>
+<style>
+    h1{
+        color: white;
+        text-shadow: 1px 1px 5px black;
+        margin-right: 60px;
+        margin-top: 135px;
+        font-size: 100px;
+        font-family: "Brush Script MT", Cursive;
+    }
+    p{
+        color: white;
+    }
+    body  {
+      background-image: url("https://i.pinimg.com/originals/95/33/79/9533794df04871f13da3bfa1223b187b.jpg");
+      background-color: #cccccc;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: 100% 128%;
+    }
+</style>
+</head>
+<body>
+    <div class="text-center" >
+    <h1 align="right">Welcome&nbsp;<br />To&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />PizzaTime</h1>
+    <a class="btn-order mt-0 mb-5" asp-area="" asp-page="/Menu">Order</a>
+</div>
+</body>
+

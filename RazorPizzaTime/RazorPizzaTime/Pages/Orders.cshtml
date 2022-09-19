@@ -1,0 +1,34 @@
+﻿@page
+@model RazorPizzaTime.Pages.OrdersModel
+@{
+    ViewData["Titel"] = "Orders";
+}
+<h1 style="text-align:center">Orders</h1>
+
+<table>
+    <thead>
+        <th>
+            ID
+        </th>
+        <th>
+            Pizza Name
+        </th>
+        <th>
+            Price
+        </th>
+    </thead>
+    <tbody>
+        @foreach (var pizza in Model.PizzaOrders)
+        {
+         <tr>
+             @pizza.Id
+        </tr>
+        <tr>
+            @pizza.PizzaName
+        </tr>
+        <tr>
+            @pizza.BasePrice $
+        </tr>
+        }
+    </tbody>
+</table>

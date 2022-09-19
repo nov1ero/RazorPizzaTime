@@ -1,0 +1,156 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    background-color: #C2C2C2;
+    background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/e2d36a7f-7ca4-4858-b311-2c23ee271452/dclru8a-fb0c7069-5581-4d21-a915-1e43a8add506.png/v1/fill/w_1024,h_576,q_80,strp/hawaiian_pizza__4k__by_thegoldenbox_dclru8a-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTc2IiwicGF0aCI6IlwvZlwvZTJkMzZhN2YtN2NhNC00ODU4LWIzMTEtMmMyM2VlMjcxNDUyXC9kY2xydThhLWZiMGM3MDY5LTU1ODEtNGQyMS1hOTE1LTFlNDNhOGFkZDUwNi5wbmciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.MI6fWwAkuSXl5mFR_Hwf1SORrosEskghqXJhtcKL0rk");
+    background-color: #cccccc;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    font-family: Tahoma, Geneva, sans-serif;
+}
+
+.btn-order {
+    -webkit-border-radius: 14;
+    -moz-border-radius: 14;
+    border-radius: 14px;
+    cursor: pointer;
+    font-family: Tahoma, Geneva, sans-serif;
+    color: #fcfcfc;
+    font-size: 19px;
+    background: #632424;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    position: page;
+}
+
+    .btn-order:hover {
+        background: #575757;
+        text-decoration: none;
+        color: #fcfcfc;
+    }
+.mainText{
+    padding: 75px 20px;
+}
+
+.smallText{
+    text-align: right;
+    color: gray;
+}
+
+.myDiv{
+    background: grey;
+    margin: 0;
+}
+.myDiv2 {
+    background: white;
+    margin: 0;
+}
+
+.textEdited {
+    margin: 100px 0 20px 0;
+    color: white;
+}
+
+.text-shadow {
+    text-shadow: 1px 1px 5px black;
+}
+    /* checkbox-circle */
+.checkbox-circle input[type="checkbox"] {
+    display: none;
+}
+
+    .checkbox-circle input[type="checkbox"] + label {
+        display: block;
+        position: relative;
+        padding-left: 35px;
+        margin-bottom: 20px;
+        font-family: Tahoma, Geneva, sans-serif;
+        font-size: 16px;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+    }
+
+    .checkbox-circle input[type="checkbox"]:hover + label:hover {
+        color: rgb(46, 34, 34);
+    }
+
+    .checkbox-circle input[type="checkbox"]:hover + label:before {
+        border: 1px solid #343a3f;
+        width: 1.2em;
+        height: 1.2em;
+        border: 2px solid #fff;
+        background: #50565a;
+        box-shadow: 0 0 0 1px #000;
+    }
+
+    .checkbox-circle input[type="checkbox"] + label:last-child {
+        margin-bottom: 0;
+    }
+
+    .checkbox-circle input[type="checkbox"] + label:before {
+        content: "";
+        display: block;
+        width: 1.4em;
+        height: 1.4em;
+        border: 1px solid #343a3f;
+        border-radius: 1em;
+        position: absolute;
+        left: 0;
+        top: 0;
+        -webkit-transition: all 0.2s, transform 0.3s ease-in-out;
+        transition: all 0.2s, transform 0.3s ease-in-out;
+        background: #f3f3f3;
+    }
+
+    .checkbox-circle input[type="checkbox"]:checked + label:before {
+        border-radius: 1em;
+        border: 2px solid #fff;
+        width: 1.2em;
+        height: 1.2em;
+        background: #629e37;
+        box-shadow: 0 0 0 1px #000;
+        -webkit-transform: rotateX(180deg);
+        transform: rotateX(180deg);
+    }
+/* checkbox-circle end*/
+.Input-text {
+    font-family: inherit;
+    font-size: var(--inputFontSize);
+    font-weight: inherit;
+    border: none;
+    border-radius: 0.4rem;
+    transition: box-shadow var(--transitionDuration);
+}
+    .Input-text:focus {
+        outline: none;
+        box-shadow: 0.2rem 0.8rem 1.6rem var(--colorPrimary600);
+    }
+
+.bg-color1 {
+    background-color: #F1F1F1;
+}
+
+.imgSize{
+    max-width: 25%;
+    height: auto;
+}
+.pizzaImage :hover{
+    transform: scale(1.05); 
+}

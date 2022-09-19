@@ -1,0 +1,57 @@
+﻿@page
+@model RazorPizzaTime.Pages.MenuModel
+@{
+    ViewData["Title"] = "Menu";
+}
+
+<style>
+    body  {
+      background-image: url("https://images.unsplash.com/photo-1604147495798-57beb5d6af73?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NHx8fGVufDB8fHx8&w=1000&q=80");
+      background-color: #cccccc;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: 100% 128%;
+    }
+</style>
+
+<div class="text-center">
+    <div class="mainText">
+        <h1 class="display-3 text-capitalize text-white">Here is menu</h1>
+        <h4 class="text-secondary text-shadow">Choose one or Create Your own</h4>
+        <p class="smallText text-shadow"><i>One pizza per order</i></p>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="mb-5 mt-5 col-12">
+                <div class="w-100 row myDiv">
+                    <div class="col-4">
+                        <img src="~/images/Pizzas/Create.png" class="w-100" />
+                    </div>
+                    <div class="col-8 align-items-center">
+                        <div class="align-middle textEdited">
+                            <h3 style="text-align:left">Craete Your Own Pizza</h3>
+                            <p style="text-align:left"> Make Your Own Pizza With our PizzaMaker</p>
+                            <a class="btn btn-order" style="float:left" asp-area="" asp-page="/Forms/CustomPizza">Create</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+             @foreach(var pizza in Model.FakeMenuDB)
+                {
+                   var imagePath = "~/images/Pizzas/" + (pizza.ImageTitle+ ".png");
+
+                   <div class="col-4 mb-5">
+                        
+                        <a class="pizzaImage" asp-area="" asp-page="/Checkout/Checkout" asp-route-ImageTitle="@pizza.ImageTitle" asp-route-PizzaPrice="@pizza.FinalPrice" asp-route-CustomPizzaName="@pizza.CustomPizzaName">
+                            <img src="@imagePath" class="w-100" asp-append-version="true"/>
+                        </a>
+                        <br />
+                    </div> 
+                }
+            
+        </div>
+
+    </div>
+
+</div>
